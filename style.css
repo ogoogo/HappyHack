@@ -298,13 +298,13 @@ h2{
 
 
 .kotlin div{
-    background-image: url(images/go.png);
+    background-image: url(images/kotlin.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 .kotlin a{
-    background-color: #72cfdd;
+    background-color: #7671e3;
 }
 
 .course-img{
@@ -324,7 +324,9 @@ h2{
 .access h2{
     padding-bottom: 40px;
 }
+
 iframe{
+    
     display: block;
     margin: 0 auto;
 }
@@ -380,6 +382,34 @@ footer span{
     0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
     100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
    }
+
+@media screen and (max-width:1055px){
+    .courses{
+        height: 1400px;
+    }
+    #particles-js{
+       height: 1400px;
+    }
+}
+
+@media screen and (max-width:790px){
+    .courses{
+        height: 1750px;
+    }
+    #particles-js{
+       height: 1750px;
+    }
+}
+
+@media screen and (max-width:525px){
+    .courses{
+        height: 2950px;
+    }
+    #particles-js{
+       height: 2950px;
+    }
+}
+
 
 @media screen and (max-width:480px){
     .title ul{
@@ -461,5 +491,23 @@ footer span{
         width: 140px;
         margin-top: 20px;
         font-size: 12px;
+    }
+    .map{
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 66.67%;
+    }
+    iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* display: block;
+        margin: 0 auto; */
+    }
+    .access{
+        height: 430px;
     }
 }

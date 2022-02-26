@@ -36,7 +36,7 @@
                 <p>Happy
                     Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>特に、Webデザイン領域のプログラミングを学習している生徒が一番積極的に活動しています。<br>誰でも最初は初心者。それを一番知っている我々がプログラミングへの第一歩を踏み出すお手伝いをさせていただきます。
                 </p>
-                <a href="">会員登録</a>
+                <a href="#intro">会員登録</a>
             </div>
         </div>
         <div class="joyful">
@@ -45,7 +45,7 @@
                 <p>Happy
                     Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>自分の想いをカタチにして発信することを是非この場で体験してみてください。世界が変わって見えるかもしれません。
                 </p>
-                <a href="">会員登録</a>
+                <a href="#intro">会員登録</a>
             </div>
             
         </div>
@@ -60,39 +60,39 @@
                 <div class="html language">
                     <div class="course-img"></div>
                     <h3>HTMLコース</h3>
-                    <a href="">このコースを受ける</a>
+                    <a href="#courses">このコースを受ける</a>
                 </div>
                 <div class="css language">
                     <div class="course-img"></div>
                     <h3>CSSコース</h3>
-                    <a href="">このコースを受ける</a>
+                    <a href="#courses">このコースを受ける</a>
                 </div>
                 <div class="unity language">
                     <div class="course-img"></div>
                     <h3>Unityコース</h3>
-                    <a href="">このコースを受ける</a>
+                    <a href="#courses">このコースを受ける</a>
                 </div>
                 <div class="ruby language">
                     <div class="course-img"></div>
                     <h3>Rubyコース</h3>
-                    <a href="">このコースを受ける</a>
+                    <a href="#courses">このコースを受ける</a>
                 </div>
             </div>
             <div class="languages-bottom">
                 <div class="js language">
                     <div class="course-img"></div>
                     <h3>JavaScriptコース</h3>
-                    <a href="">このコースを受ける</a>
+                    <a href="#courses">このコースを受ける</a>
                 </div>
                 <div class="swift language">
                     <div class="course-img"></div>
                     <h3>Swiftコース</h3>
-                    <a href="">このコースを受ける</a>
+                    <a href="#courses">このコースを受ける</a>
                 </div>
                 <div class="kotlin language">
                     <div class="course-img"></div>
                     <h3>Kotlinコース</h3>
-                    <a href="">このコースを受ける</a>
+                    <a href="#courses">このコースを受ける</a>
                 </div>
             </div>
 
@@ -116,10 +116,12 @@
 
     <section id="access" class="access fuwat">
         <h2>Access</h2>
-        <iframe
+        <div class="map">
+            <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3419.613094630799!2d135.49017504682655!3d34.69730797879875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6f359905ed7%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1645799973782!5m2!1sja!2sjp"
             width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
+        </div>
+            </section>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -145,6 +147,20 @@
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 responsive: [
+                    {
+                        breakpoint:1023,
+                        settings:{
+                            slidesToShow:3
+                        }
+
+                    },
+                    {
+                        breakpoint:635,
+                        settings:{
+                            slidesToShow:2
+                        }
+
+                    },
                     {
                         breakpoint:480,
                         settings:{
